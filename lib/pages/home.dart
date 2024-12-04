@@ -5,6 +5,9 @@ import 'package:app_2/elements/ProductCard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+final List<String> entries = <String>['A', 'B', 'C'];
+final List<int> colorCodes = <int>[600, 500, 100];
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -15,7 +18,7 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(top: 30, left: 60, right: 60),
+            margin: EdgeInsets.only(top: 30, left: 20, right: 20),
             decoration: BoxDecoration(boxShadow: [
               BoxShadow(
                   color: Colors.black.withOpacity(0.11),
@@ -32,30 +35,39 @@ class HomePage extends StatelessWidget {
                       borderSide: BorderSide.none)),
             ),
           ),
-          SizedBox(width: 10),
-          Container(
-            height: 621,
-            child: ListView.builder(
-              itemCount: 10, // количество элементов в списке
-              itemBuilder: (context, index) {
-                return Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SizedBox(width: 20),
-                    Container(
-                      // width: 150,
-                      child: ProductCard(),
-                    ),
-                    SizedBox(width: 20),
-                    Container(
-                      margin: EdgeInsets.only(top: 0, left: 0, right: 150),
-                      // width: 150,
-                      child: ProductCard(),
-                    ),
-                    Container()
-                  ],
-                );
-              },
+          Center(
+            child: Container(
+              height: 621,
+              child: ListView.builder(
+                itemCount: 10, // количество элементов в списке
+                itemBuilder: (context, i)
+                    // => ListTile(
+                    //       title: Text("data"),
+                    //     )
+                    {
+                  return Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 20),
+                      SizedBox(
+                        width: 180,
+                        child: Container(
+                          child: ProductCard(),
+                        ),
+                      ),
+                      SizedBox(width: 20),
+                      SizedBox(
+                        width: 180,
+                        child: SizedBox(
+                          // margin: EdgeInsets.only(top: 0, left: 0, right: 150),
+                          width: 180,
+                          child: ProductCard(),
+                        ),
+                      ),
+                    ],
+                  );
+                },
+              ),
             ),
           ),
         ],

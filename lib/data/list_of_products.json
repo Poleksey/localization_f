@@ -1,0 +1,59 @@
+{
+  "items": 
+ [
+    {
+      "id": "01",
+      "title": "Металлический кубик",
+      "price": "1000",
+      "currency": "rub",  
+      "imageUrl": "https://atlas-content-cdn.pixelsquid.com/stock-images/silver-cube-3AaJe6D-600.jpg"
+    },
+    {
+      "id": "02",
+      "title": "Breakfast Earlgrey",
+      "price": "200",
+      "currency": "rub",
+      "imageUrl": "https://napitkistore.ru/wp-content/uploads/2017/07/twg-breakfast-earl-grey-tea-15.webp"
+    },
+
+    {
+      "id": "03",
+      "title": "Лампочка",
+      "price": "289",
+      "currency": "rub",
+       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAaaRtuwCq0Q7TT9Kflz7-bhHDDIbZ3BZfrA&s"
+    },
+    {
+      "id": "04",
+      "title": "Валерианы настойка",
+      "price": "90",
+      "currency": "rub",
+      "imageUrl": "https://images.apteka.ru/original_d18e7d7d-b5ff-4397-a01f-bd66465b0cc1.jpeg"
+    },
+    {
+      "id": "05",
+      "title": "Кофе растворимый NESCAFÉ Classic Crema",
+      "price": 730,
+      "currency": "rub",
+      "imageUrl": "https://ir.ozone.ru/s3/multimedia-1-u/wc1000/7216994610.jpg"
+    },
+    {
+      "id": "06",
+      "title": "Сунь Цзы Искусство войны ",
+      "price": "1200",
+      "currency": "rub",
+      "imageUrl": "https://www.combook.ru/pictures/4/9/0_11866179.jpg"
+    },
+    {
+      "id": "07",
+      "title": "армированный скотч",
+      "price": "400",
+      "currency": "rub",
+      "imageUrl": "https://pack-land.ru/components/com_jshopping/files/img_products/full_armirovannyj-skotch.jpg"
+    }
+  ]
+}
+
+
+
+
