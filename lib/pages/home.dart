@@ -2,11 +2,13 @@
 
 // import 'dart:convert';
 import 'package:app_2/elements/ProductCard.dart';
+import 'package:app_2/network/product_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 final List<String> entries = <String>['A', 'B', 'C'];
 final List<int> colorCodes = <int>[600, 500, 100];
+List<ProductModel>? _product_model_list;
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

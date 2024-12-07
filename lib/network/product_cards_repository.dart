@@ -8,31 +8,36 @@ import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 
 class ProductCardsRepository {
-  // Future<List<ProductModel>> getProductsList() async {
-  //   final response = await Dio().get(' ссылка');
+  Future<List<dynamic>> loadItemsFromJson() async {
+    // Чтение JSON файла
+    final jsonString = await rootBundle
+        .loadString('app_2/lib/data/list_of_products_large.json');
 
-  //   // final data = response.data as List< Map<String, dynamic>>;
-  //   // final dataMap = data.map((e) => ProductModel(
-  //   //         id: ,
-  //   //         title: e.key,
-  //   //         price: e.key,
-  //   //         currency: e.key,
-  //   //         imageUrl: e.key))
-  //   //     .toList();
-  //   return ProductModel.fromJson(jsonDecode(response.)
-  // }
+    List<dynamic> jsonList = jsonDecode(jsonString);
+    List<Map<String, dynamic>> mapList =
+        List<Map<String, dynamic>>.from(jsonList);
+
+    return mapList;
+  }
 }
+//   Future<List<ProductModel>> getProductsList() async {
+//     final response = await Dio().get(' ссылка');
 
-Future<List<dynamic>> loadItemsFromJson() async {
-  // Чтение JSON файла
-  final jsonString =
-      await rootBundle.loadString('app_2/lib/data/list_of_products_large.json');
+//     // final data = response.data as List< Map<String, dynamic>>;
+//     // final dataMap = data.map((e) => ProductModel(
+//     //         id: ,
+//     //         title: e.key,
+//     //         price: e.key,
+//     //         currency: e.key,
+//     //         imageUrl: e.key))
+//     //     .toList();
+//     return ProductModel.fromJson(jsonDecode(response.)
+//   }
+// }
 
-  // Декодирование JSON строки в Dart объект
-  final Map<String, dynamic> jsonData = json.decode(jsonString);
+    // // Декодирование JSON строки в Dart объект
 
-  // Извлечение массива из поля "items"
-  final List<dynamic> items = jsonData['items'];
+    // final Map<String, dynamic> jsonData = json.decode(jsonString);
 
-  return items;
-}
+    // // Извлечение массива из поля "items"
+    // final List<dynamic> items = jsonData['items'];
