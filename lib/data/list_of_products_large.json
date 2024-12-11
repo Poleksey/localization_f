@@ -36,7 +36,7 @@
     {
       "id": "05",
       "title": "Кофе растворимый NESCAFÉ Classic Crema",
-      "price": 730,
+      "price": "730",
       "currency": "rub",
       "description": "Вкусный 100% натуральный растворимый кофе с нежной пенкой",
       "imageUrl": "https://ir.ozone.ru/s3/multimedia-1-u/wc1000/7216994610.jpg"
